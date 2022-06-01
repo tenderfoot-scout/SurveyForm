@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="tnx.css">
+
+    <script>
+        function myFunction() {
+            const searchParams = new URLSearchParams(window.location.search)
+            const name = searchParams.get('name')
+            document.getElementById('name').innerHTML = name;  
+            //alert("Thank you for completing the form " + name);
+        }
+    </script>
+
+
+
+</head>
+
+<body onload="myFunction()">
+
+    <div class="main-container">
+        <div class="top-container">
+          <i class="fa fa-check-circle-o bigger-size" aria-hidden="true"></i>
+        </div>
+      
+        <div class="bottom-container">
+          <h1>Thank you <span id="name"></span></h1>
+          <p>You've completed the survey.</p>
+          <button>Finish</button>
+
+
+
+
+  </div>
+</div>
+
+</body>
+
+</html>
